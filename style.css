@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFDBB6;
+  background-color: #67C090;
 }
 
 .container {
@@ -20,7 +20,9 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   min-height: 45vh;
-  width: 40vw;
+  width: 35vw;
+  box-shadow: 2px 2px 20px #301010;
+
 }
 
 .container h2 {
@@ -43,7 +45,11 @@ form input {
   font-size: 1.2rem;
   padding: 0.7rem;
 }
-
+.amount p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
 .dropdown {
   display: flex;
   justify-content: space-between;
@@ -76,6 +82,10 @@ form input {
 
 .msg {
   margin: 2rem 0 2rem 0;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
 }
 
 form button {
