@@ -42,6 +42,7 @@ btn.addEventListener('click', async(e)=>{
   // console.log(amtVal);
   if (amtVal === "" || amtVal < 1){
    alert("Please Enter Amount")
+   return false;
   }
 
   // console.log(fromCurr.value, toCurr.value);
@@ -61,4 +62,5 @@ btn.addEventListener('click', async(e)=>{
 
   msg.innerText = `Result: ${amount.value} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`
   
+  amount.value = "";
 });
